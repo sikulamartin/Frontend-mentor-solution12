@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.svg" class="imgLogo">
+    </div>
+    <div class="wrapper">
+      <div class="wrapperLeft">
+        <form id="tip-form">
+          <div class="formRow formRow0">
+            <label for="tip-form-bill"><span class="bill">Bill</span></label>
+          </div>
+          <div class="formRow formRow1">
+            <input id="tip-form-bill" name="bill" placeholder="0"><img src="images/icon-dollar.svg" class="imgPeople">
+          </div>
+          <div class="formRow formRow2">
+            <label for="tip-form-tip-percent">Select Tip %</label>
+          </div>
+          <div class="parent">
+            <div class="div1">
+              <button id="fivePercent" class="buttonTip" type="button">5%</button>
+            </div>
+            <div class="div2">
+              <button id="tenPercent" class="buttonTip" type="button">10%</button>
+            </div>
+            <div class="div3">
+              <button id="fifteenPercent" class="buttonTip" type="button">15%</button>
+            </div>
+            <div class="div4">
+              <button id="twentyFivePercent" class="buttonTip" type="button">25%</button>
+            </div>
+            <div class="div5">
+              <button id="fiftyPercent" class="buttonTip" type="button">50%</button>
+            </div>
+            <div class="div6">
+              <input id="custom" class="buttonTip buttonCustom" placeholder="Custom"></input>
+            </div>
+          </div>
+          <div class="formRow0 rowContainer"><label for="tip-form-number-of-people" class="numberPeople">Number of
+              People</label>
+            <div class="ErrorMessage" id="error-message">Can’t be zero</div>
+          </div>
+          <input id="tip-form-people" placeholder="0"><img src="images/icon-person.svg" class="imgPeople">
+        </form>
+      </div>
+      <div class="wrapperRight">
+        <div class="recapitulation">
+          <div class="tipAmount">
+            <div class="tipContainer">Tip Amount<span class="perPerson">/ person</span></div><span
+              id="tip-amount">$0.00</span>
+          </div>
+          <div class="Total">
+            <div class="tipContainer">Total<span class="perPerson">/ person</span></div><span
+              id="tip-total">$0.00</span>
+          </div>
+          <div class="resetButtonContainer">
+            <button class="resetButton" id="reset-button">
+              RESET
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
